@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prehistoric Playground – Dino Colour & Learn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Prehistoric Playground is an interactive dinosaur colouring and activity book with QR codes, fun facts, activities, videos and more." />
+
+  <!-- Fun, cartoony fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER / TABS -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <div class="logo">Prehistoric Playground</div>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="alphabet.html" class="nav-link">Dinosaur Alphabet</a>
+        <!-- You can add more global pages later if you like -->
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <h1>Prehistoric Playground</h1>
+            <p class="hero-subtitle">
+              A bright, interactive dinosaur colouring and activity adventure for kids aged 4–8 – 
+              with fun facts, mazes, videos, affiliate picks and more for each dinosaur.
+            </p>
+
+            <div class="hero-badges">
+              <div class="hero-badge"><span>🖍</span> 20 Dino Colouring Pages</div>
+              <div class="hero-badge"><span>🎯</span> Activities & Mazes</div>
+              <div class="hero-badge"><span>📱</span> QR Codes & Bonus Content</div>
+            </div>
+
+            <div class="hero-buttons">
+              <a class="btn primary-btn" href="#" target="_blank" rel="noopener">
+                Buy the Book on Amazon
+              </a>
+              <a class="btn secondary-btn" href="alphabet.html">
+                Explore the Dino Alphabet
+              </a>
+            </div>
+            <p class="tiny-note">
+              Replace the Amazon button link with your real KDP URL when your book is live.
+            </p>
+          </div>
+
+          <div class="hero-image">
+            <div class="mock-cover">
+              <div>
+                <div class="mock-cover-title">Prehistoric<br />Playground</div>
+                <div class="mock-cover-tagline">Colour • Learn • Play</div>
+              </div>
+              <div class="mock-cover-dinos">
+                <span>🦕</span> <span>🦖</span> <span>🌋</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="section">
+      <div class="container">
+        <h2>What Is Prehistoric Playground?</h2>
+        <p class="section-intro">
+          It’s more than just a colouring book. Each dinosaur in the book has its own 
+          little “hub” here on the website with fun facts, activity ideas, curated dino 
+          products and kid-safe video suggestions – perfect for using alongside the book 
+          or when you scan the QR code.
+        </p>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>🦕 Dino Hub Pages</h3>
+            <p>
+              Every dinosaur (like T. rex, Triceratops & friends) gets its own page on the 
+              site, with fun facts, activities, videos and hand-picked dino extras.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>🎨 Designed for Kids</h3>
+            <p>
+              Big, bold, simple layout, friendly fonts and colourful cards. Easy for kids 
+              to look at with an adult and find their favourite dinosaur.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>📚 Learning + Play</h3>
+            <p>
+              Each hub supports reading, counting, creativity, and curiosity with 
+              age-appropriate prompts and games.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DINO LIST -->
+    <section class="section alt-section">
+      <div class="container">
+        <h2>Choose a Dinosaur</h2>
+        <p class="section-intro">
+          Start with one of these dinosaurs. Each one opens its own page with fun facts, 
+          activities, videos, affiliate picks and more – all in one place.
+        </p>
+
+        <div class="dino-grid">
+          <!-- T. REX CARD -->
+          <a href="dino-trex.html" class="dino-card">
+            <div class="dino-card-emoji">🦖</div>
+            <div class="dino-card-body">
+              <h3>Tyrannosaurus Rex</h3>
+              <p>The “tyrant lizard king” with tiny arms and a giant ice cream stand in your book.</p>
+              <span class="dino-card-link">Open T. rex Hub →</span>
+            </div>
+          </a>
+
+          <!-- TRICERATOPS CARD -->
+          <a href="dino-triceratops.html" class="dino-card">
+            <div class="dino-card-emoji">🦕</div>
+            <div class="dino-card-body">
+              <h3>Triceratops</h3>
+              <p>Three horns, a giant frill, and the best slide in the prehistoric playground.</p>
+              <span class="dino-card-link">Open Triceratops Hub →</span>
+            </div>
+          </a>
+
+          <!-- TEMPLATE FOR MORE DINOS -->
+          <!--
+          <a href="dino-stegosaurus.html" class="dino-card">
+            <div class="dino-card-emoji">🦕</div>
+            <div class="dino-card-body">
+              <h3>Stegosaurus</h3>
+              <p>Plates, spikes and the star of the birthday party page.</p>
+              <span class="dino-card-link">Open Stegosaurus Hub →</span>
+            </div>
+          </a>
+          -->
+        </div>
+
+        <p class="tiny-note">
+          To add more dinosaurs, copy one of the cards above and create matching pages 
+          like <code>dino-stegosaurus.html</code>, <code>dino-brachiosaurus.html</code>, and so on.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; <span id="year"></span> Prehistoric Playground. All rights reserved.</p>
+        <p class="tiny-note">
+          This site may contain affiliate links. As an Amazon Associate I earn from qualifying purchases 
+          at no extra cost to you.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="alphabet.html">Dinosaur Alphabet</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
