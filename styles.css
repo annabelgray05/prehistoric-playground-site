@@ -367,3 +367,362 @@ a {
   content: "";
   position: absolute;
   width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 155, 90, 0.22), rgba(255, 111, 168, 0.16));
+  top: -30px;
+  right: -30px;
+}
+
+.feature-card h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+  position: relative;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+  position: relative;
+}
+
+/* ========== DINO GRID ON HOME ========== */
+
+.dino-grid {
+  margin-top: 1.7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.1rem;
+}
+
+.dino-card {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  padding: 0.9rem 0.95rem;
+  border-radius: var(--radius-lg);
+  background: #ffffff;
+  border: 1px solid var(--border-soft);
+  box-shadow: 0 12px 22px rgba(161, 176, 215, 0.32);
+  text-decoration: none;
+}
+
+.dino-card-emoji {
+  font-size: 1.8rem;
+}
+
+.dino-card-body h3 {
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
+}
+
+.dino-card-body p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.dino-card-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #4a4b7b;
+}
+
+/* ========== DINO HUB LAYOUT ========== */
+
+.dino-hub-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.hub-back-link {
+  font-size: 0.85rem;
+  margin: 0 0 0.4rem;
+}
+
+.hub-back-link a {
+  text-decoration: none;
+  color: #5f6283;
+}
+
+.hub-back-link a:hover {
+  color: var(--accent);
+}
+
+.dino-hub-header h1 {
+  margin: 0 0 0.3rem;
+  font-size: 1.9rem;
+}
+
+.hub-badge-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: flex-end;
+}
+
+.hub-badge {
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid #ffd5b3;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5b4b6a;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.hub-badge span {
+  font-size: 1rem;
+}
+
+.hub-grid {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.5fr);
+  gap: 1.3rem;
+}
+
+.hub-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-soft);
+  padding: 1.1rem 1.1rem 1.2rem;
+}
+
+.hub-card h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.1rem;
+}
+
+/* lists */
+
+.fact-list,
+.activity-list {
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0.1rem 0 0;
+}
+
+.fact-list li + li,
+.activity-list li + li {
+  margin-top: 0.25rem;
+}
+
+/* VIDEOS */
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.video-card h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(166, 172, 205, 0.5);
+}
+
+.video-frame iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* PRODUCTS / AFFILIATE */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.product-card {
+  display: block;
+  padding: 0.7rem 0.8rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-soft);
+  text-decoration: none;
+  background: #fdfbff;
+  font-size: 0.86rem;
+  color: var(--text-main);
+  box-shadow: 0 8px 18px rgba(191, 176, 224, 0.35);
+}
+
+.product-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 11px 23px rgba(191, 176, 224, 0.5);
+}
+
+.product-title {
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+}
+
+.product-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ALPHABET PAGE */
+
+.alphabet-grid {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.alphabet-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-soft);
+  padding: 0.9rem 0.9rem 1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.alphabet-letter {
+  font-family: "Baloo 2", system-ui, sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 0.3rem;
+}
+
+.alphabet-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.alphabet-card li + li {
+  margin-top: 0.2rem;
+}
+
+.alphabet-card a {
+  text-decoration: none;
+  color: #43538f;
+}
+
+.alphabet-card a:hover {
+  color: var(--accent);
+}
+
+/* EXPLORER ZONE cards are already styled in previous CSS, you can reuse if needed */
+
+/* FOOTER */
+
+.site-footer {
+  border-top: 1px solid #dde3f5;
+  padding: 1.3rem 0 1.7rem;
+  background: #ffffff;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.footer-inner p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding: 1.9rem 1.7rem;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .dino-hub-header {
+    flex-direction: column;
+  }
+
+  .hub-badge-box {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 780px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .hub-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    padding-top: 2.3rem;
+  }
+
+  .hero-inner {
+    padding: 1.6rem 1.4rem;
+    border-radius: 22px;
+  }
+
+  .container {
+    padding: 0 1.1rem;
+  }
+
+  .feature-grid,
+  .dino-grid,
+  .alphabet-grid {
+    gap: 1rem;
+  }
+
+  .hub-card {
+    padding: 1rem 0.9rem 1.1rem;
+    border-radius: 18px;
+  }
+}
